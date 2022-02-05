@@ -52,11 +52,4 @@ public class GameController {
 		
 		return "search/db";
 	}
-	/*
-	public List<Game> games() {
-		List<Game> gameList = gameMapper.findAll();
-		
-		return gameList;
-	}
-	*/
 }
