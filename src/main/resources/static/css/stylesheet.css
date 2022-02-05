@@ -1,0 +1,58 @@
+body{
+    font-family :"Avenir Next";
+    margin : 0;
+}
+
+header{
+    background-color : #2498B3;
+    color : white;
+    height : 90px;
+    width : 110%;
+    position  : fixed;
+    top : 0;
+}
+
+.header-logo{
+    float : left;
+    font-size : 32px;
+    padding : 20px 40px;
+}
+
+.main{
+    padding :100px 40px;
+}
+
+.main-logo{
+    color :navy;
+    font-size : 24px;
+}
+
+
+.btn{
+    padding : 6px 18px;
+    color : black;
+    font-size: 18px;
+    background-color : #a2d729;
+    cursor : pointer;
+    box-shadow: 0 5px #1a7940;
+}
+
+.btn:active{
+    position : relative;
+    top : 5px;
+    box-shadow: none;
+}
+
+input{
+    padding: 6px;
+    font-size : 8px;
+}
+
+table{
+	margin : 10px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+}

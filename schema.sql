@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS games;
+
+CREATE TABLE games
+(
+	id INT unsigned AUTO_INCREMENT,
+	name VARCHAR(100) NOT NULL,
+	genru VARCHAR(100) NOT NULL,
+	platform VARCHAR(100) NOT NULL,
+	price INT(10) NOT NULL,
+	
+	PRIMARY KEY(id)
+);
