@@ -42,15 +42,21 @@ public class GameController {
 			// ゲームの一覧を取得
 			List<Game> gameList = gameService.getGames(); 
 			model.addAttribute("gameList", gameList);
+
 			
-		// getId()がnullでない時、IDで検索し、１件取得
+		// getId()が" "でない時、IDで検索し、１件取得
 		}else {	
+			
 			if(NumberUtils.isNumber(gameForm.getId())) {
 				Game game = gameService.findById(gameForm.getId());
 				model.addAttribute("game", game);
-					if(game ==null) {
+					
+					// レコードが存在しない時の表示
+					if(game == null) {
 						model.addAttribute("notFound", "レコードは存在しませんでした。");
 					}
+			
+			// 文字列で検索された時の表示
 			}else {
 				model.addAttribute("mojiretsu", "数字を入力して下さい。");
 			}

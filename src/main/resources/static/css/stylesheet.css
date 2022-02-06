@@ -53,8 +53,12 @@ table{
 }
 
 table th, table td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 6px;
+}
+
+.field{
+	background-color : #c0c0c0;
 }
 
 .exception{
