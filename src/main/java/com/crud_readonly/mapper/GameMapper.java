@@ -16,8 +16,4 @@ public interface GameMapper {
 	//　idで検索
 	public Game findById(Game game);
 	
-	/* nameで検索
-	Game findByName(Game game);
-    */
-   
 }

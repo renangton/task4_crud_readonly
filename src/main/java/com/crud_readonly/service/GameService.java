@@ -21,7 +21,7 @@ public class GameService {
 	}
 	
     // idで検索
-	public Game findById(Integer id) {
+	public Game findById(String id) {
 		Game gameId = new Game();
 		gameId.setId(id);
 		return gameMapper.findById(gameId);
