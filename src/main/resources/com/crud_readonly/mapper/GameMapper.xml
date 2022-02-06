@@ -9,10 +9,5 @@
     <select id="findById" resultType="com.crud_readonly.entity.Game">
         SELECT * FROM games WHERE id = #{id}
     </select>
-    <!-- 
-    <select id="findByName" resultType="com.crud_readonly.entity.Game">
-        SELECT * FROM games WHERE name = #{name}
-    </select>
-     -->
     
 </mapper>

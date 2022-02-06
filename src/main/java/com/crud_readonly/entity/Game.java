@@ -1,13 +1,13 @@
 package com.crud_readonly.entity;
 
 public class Game {
-	private Integer id;
+	private String id;
 	private String name;
 	private String genru;
 	private String platform;
 	private int price;
 	
-	public Game(Integer id, String name, String genru, String platform, int price) {
+	public Game(String id, String name, String genru, String platform, int price) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -20,10 +20,10 @@ public class Game {
 		
 	}
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getName() {
