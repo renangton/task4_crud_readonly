@@ -42,12 +42,12 @@ public class GameController {
 		// getId()が" "の時、全件取得
 		if(gameForm.getId() == "") {
 			
-			if(gameForm.getOrder() == "asc") {
+			if(gameForm.getOrder().equals("asc")) {
 				
 				List<Game> gameListAsc = gameService.getGamesAsc(); 
 				model.addAttribute("gameList", gameListAsc);
 				
-			}else if(gameForm.getOrder() == "desc") {
+			}else if(gameForm.getOrder().equals("desc")) {
 				
 				List<Game> gameListDesc = gameService.getGamesDesc(); 
 				model.addAttribute("gameList", gameListDesc);
