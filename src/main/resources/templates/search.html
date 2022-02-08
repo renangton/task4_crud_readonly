@@ -11,14 +11,20 @@
 		<div class = "header-logo">GAMEを検索</div>
 	</header>
 	<div class = "main">
-		<form method="post" action="/search/db">
+		<form method="post" th:action="@{/search/db}">
 			 <div class = "main-logo">検索条件</div>
 			 <table>
 			 	<tr>
 			 		<th>ID</th>
-			 		<th><input type="text" name="id" th:value="${id_value}"></th>
+			 		<th><input type="text" name="id" th:value="${id_value}"></th>		 		
   			 	</tr>
 			 </table>
+			 <div>
+			 	<input type="radio" id="asc" name="order" value="asc" checked>
+			 	<label for="asc">昇順</label>			 
+			 	<input type="radio" id="desc" name="order" value="desc">
+			 	<label for="desc">降順</label>			 
+			 </div>	
     		 <input class = "btn" type="submit" value="検索">
   		</form>
 	</div>

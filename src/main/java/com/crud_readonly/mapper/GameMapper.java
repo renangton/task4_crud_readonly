@@ -10,9 +10,12 @@ import com.crud_readonly.entity.Game;
 @Mapper
 public interface GameMapper {
 	
-	// Gameのリストを全件取得する
-	public List<Game> findAll();
-
+	// Gameのリストを全件取得する（昇順）
+	public List<Game> findAllAsc();
+	
+	// Gameのリストを全件取得する（降順）
+	public List<Game> findAllDesc();
+	
 	//　idで検索
 	public Game findById(Game game);
 	
