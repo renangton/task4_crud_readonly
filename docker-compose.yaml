@@ -9,5 +9,10 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: game_list
+      MYSQL_USER: user
+      MYSQL_PASSWORD: example
     ports:
       - 3307:3306
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
