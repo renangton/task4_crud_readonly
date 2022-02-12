@@ -37,7 +37,6 @@ public class GameController {
 
 	public String search(GameForm gameForm, Model model) {
 
-		// getId()が" "の時、全件取得
 		if (StringUtils.isEmpty(gameForm.getId())) {
 
 			if (gameForm.getOrder().equals("asc")) {
