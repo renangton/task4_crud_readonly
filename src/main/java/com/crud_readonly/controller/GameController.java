@@ -2,6 +2,8 @@ package com.crud_readonly.controller;
 
 import java.util.List;
 
+
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,15 +30,20 @@ public class GameController {
 	@GetMapping("/search")
 	public String getSearch() {
 
+
 		return "search";
 
 	}
+
 
 	@PostMapping("/search/db")
 
 	public String search(GameForm gameForm, Model model) {
 
-		if (gameForm.getId() == "") {
+
+		// getId()が" "の時、全件取得
+		if (StringUtils.isEmpty(gameForm.getId())) {
+
 
 			if (gameForm.getOrder().equals("asc")) {
 
